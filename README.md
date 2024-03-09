@@ -1,2 +1,2 @@
 # JavaScript
- A repo for all the JS i am learning 
+ A repo for all the JS I am learning 

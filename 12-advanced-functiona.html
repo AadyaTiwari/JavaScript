@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Advanced Functions 
+        </title>
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        
+    	<script>
+            /*
+            function greeting(){
+                console.log('hello');
+            }
+
+            greeting(); //functions are values
+
+            const num = 2;
+            const fun1 = function (){
+                console.log('hello2');
+            };
+
+            console.log(fun1);
+            console.log(typeof fun1);
+            fun1();
+
+            const obj1 = {
+                num: 2,
+                fun: function (){
+                    console.log('hello3');//function inside an object is a method
+                }
+            };
+            obj1.fun();
+
+            function display(param){
+                console.log(param);
+
+            }
+            display(2);
+// passing a function into another function 
+            function run(param){
+                param();
+            }
+
+            run(function(){
+                console.log('hello4');
+            });
+*/          
+            setTimeout(function (){
+                console.log('timeout');
+                console.log('timeout2');
+            }, 3000);
+
+            //Asynchronous code
+            console.log('nextline');
+
+            setInterval(function(){
+                console.log('interval')
+            },3000);
+            console.log('after interval');
+        </script>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,68 @@
+/* client/styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(10, 10, 30, 1), rgba(30, 30, 60, 1));
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.aurora-background {
+    position: absolute; /* Position absolutely to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.5) 0%, rgba(255, 0, 255, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.clock {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.8); /* Enhanced aura effect */
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 90%; /* Responsive max width */
+    width: 400px; /* Set a max width for larger screens */
+    transition: transform 0.2s ease; /* Smooth scaling */
+}
+
+.clock:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+h1 {
+    font-size: 3em; /* Large text */
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(255, 0, 255, 1); /* Strong glow effect */
+}
+
+@media (max-width: 800px) {
+    .clock {
+        width: 80%; /* Make it wider on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+    
+    h1 {
+        font-size: 2.5em; /* Smaller text for mobile */
+    }
+}
+
+@media (max-width: 500px) {
+    .clock {
+        width: 90%; /* Make it even wider */
+        padding: 10px; /* Further reduce padding */
+    }
+    
+    h1 {
+        font-size: 2em; /* Even smaller text for very small screens */
+    }
+}
